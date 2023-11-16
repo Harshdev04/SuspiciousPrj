@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "SuspiciousPrj_backend": {
+      "main": "src/SuspiciousPrj_backend/main.mo",
+      "type": "motoko"
+    },
+    "SuspiciousPrj_frontend": {
+      "dependencies": [
+        "SuspiciousPrj_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/SuspiciousPrj_frontend/src/index.html"
+      },
+      "source": [
+        "src/SuspiciousPrj_frontend/assets",
+        "dist/SuspiciousPrj_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
